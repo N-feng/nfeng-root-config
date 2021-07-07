@@ -26,10 +26,17 @@ registerApplication({
 // });
 
 // Vue2 子应用
+// registerApplication({
+//   name: "@polyglot-mf/clients",
+//   app: () => System.import("https://localhost:8500/js/app.js"),
+//   activeWhen: "/clients",
+// });
+
+// Vue2 子应用
 registerApplication({
   name: "@polyglot-mf/clients",
   app: () => System.import("https://localhost:8500/js/app.js"),
-  activeWhen: "/clients",
+  activeWhen: "/layout",
 });
 
 registerApplication({
