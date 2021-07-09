@@ -13,11 +13,11 @@ import { registerApplication, start } from "single-spa";
 // });
 
 // react 子应用
-registerApplication({
-  name: "@polyglot-mf/navbar",
-  app: () => System.import("http://192.168.70.246:8080/polyglot-mf-navbar.js"),
-  activeWhen: "/",
-});
+// registerApplication({
+//   name: "@polyglot-mf/navbar",
+//   app: () => System.import("http://localhost:8080/polyglot-mf-navbar.js"),
+//   activeWhen: "/",
+// });
 
 // registerApplication({
 //   name: "@polyglot-mf/clients",
@@ -32,12 +32,19 @@ registerApplication({
 //   activeWhen: "/clients",
 // });
 
-// Vue2 子应用
+// bciscm 子应用
 registerApplication({
-  name: "@polyglot-mf/clients",
-  app: () => System.import("https://localhost:8500/js/app.js"),
-  activeWhen: "/layout",
+  name: "ygp-bciscm-static",
+  app: () => System.import("http://localhost:8080/js/app.js"),
+  activeWhen: "/",
 });
+
+// Vue2 子应用
+// registerApplication({
+//   name: "@polyglot-mf/clients",
+//   app: () => System.import("poly-mf-clients"),
+//   activeWhen: "/layout",
+// });
 
 registerApplication({
   name: "@polyglot-mf/account-settings",
