@@ -26,11 +26,11 @@ import { registerApplication, start } from "single-spa";
 // });
 
 // Vue2 子应用
-// registerApplication({
-//   name: "@polyglot-mf/clients",
-//   app: () => System.import("https://localhost:8500/js/app.js"),
-//   activeWhen: "/clients",
-// });
+registerApplication({
+  name: "navbar",
+  app: () => System.import("https://localhost:8500/js/app.js"),
+  activeWhen: "/",
+});
 
 // bciscm 子应用
 registerApplication({
