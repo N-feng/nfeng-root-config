@@ -28,8 +28,8 @@ import { registerApplication, start } from "single-spa";
 // Vue2 子应用
 registerApplication({
   name: "navbar",
-  app: () => System.import("https://localhost:8500/js/app.js"),
-  activeWhen: "/",
+  app: () => System.import("http://localhost:8500/js/app.js"),
+  activeWhen: ["/home", "/sale-order"],
 });
 
 // bciscm 子应用
