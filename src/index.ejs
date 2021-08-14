@@ -4,16 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Polyglot Microfrontends</title>
   <meta name="importmap-type" content="systemjs-importmap" />
-  <script type="systemjs-importmap" src="https://storage.googleapis.com/polyglot.microfrontends.app/importmap.json"></script>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@polyglot-mf/root-config": "https://bciscm-test3.yigongpin.net/polyglot-mf-root-config.js",
+        "single-spa": "https://polyglot.microfrontends.app/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
+        "react-dom": "https://polyglot.microfrontends.app/npm/react-dom@17.0.1/umd/react-dom.production.min.js",
+        "@polyglot-mf/navbar": "https://polyglot.microfrontends.app/navbar/c51a2e455fbec2d96b6af3b120a922b09f8e74fe/polyglot-mf-navbar.js",
+        "@polyglot-mf/styleguide": "https://polyglot.microfrontends.app/styleguide/735a89a8981b97cc435e3fb0b601379dd3f252f9/polyglot-mf-styleguide.js",
+        "vue": "https://polyglot.microfrontends.app/npm/vue@2.6.12/dist/vue.min.js",
+        "vue-router": "https://polyglot.microfrontends.app/npm/vue-router@3.4.9/dist/vue-router.min.js",
+        "@polyglot-mf/clients": "https://polyglot.microfrontends.app/clients/86c7d476d81423aef585d03a490b83ceab619031/js/app.js",
+        "@polyglot-mf/account-settings": "https://polyglot.microfrontends.app/account-settings/5e3ca9fa9c725000905023718049d5fa74df8689/polyglot-mf-account-settings.js",
+        "single-spa-angularjs": "https://polyglot.microfrontends.app/npm/single-spa-angularjs@4.1.0/lib/single-spa-angularjs.js",
+        "@polyglot-mf/navbar/": "https://polyglot.microfrontends.app/navbar/c51a2e455fbec2d96b6af3b120a922b09f8e74fe/",
+        "@polyglot-mf/root-config/": "https://polyglot.microfrontends.app/root-config/e2194a4b2534948f974c8b001ee04f5e07ffd083/",
+        "@polyglot-mf/styleguide/": "https://polyglot.microfrontends.app/styleguide/735a89a8981b97cc435e3fb0b601379dd3f252f9/",
+        "@polyglot-mf/clients/": "https://polyglot.microfrontends.app/clients/86c7d476d81423aef585d03a490b83ceab619031/js/",
+        "@polyglot-mf/account-settings/": "https://polyglot.microfrontends.app/account-settings/5e3ca9fa9c725000905023718049d5fa74df8689/"
+      }
+    }
+  </script>
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
         "@polyglot-mf/root-config": "//localhost:9000/polyglot-mf-root-config.js",
         "ygp-bciscm-static": "http://localhost:8080/js/app.js",
-        "navbar": "http://localhost:8500/js/app.js"
+        "nfeng-navbar": "http://localhost:8500/js/app.js"
       }
     }
   </script>

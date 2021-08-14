@@ -27,9 +27,9 @@ import { registerApplication, start } from "single-spa";
 
 // Vue2 子应用
 registerApplication({
-  name: "navbar",
+  name: "nfeng-navbar",
   app: () => System.import("http://localhost:8500/js/app.js"),
-  activeWhen: ["/home", "/sale-order"],
+  activeWhen: "/",
 });
 
 // bciscm 子应用
