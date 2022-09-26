@@ -32,13 +32,6 @@ registerApplication({
   activeWhen: "/",
 });
 
-// bciscm 子应用
-registerApplication({
-  name: "ygp-bciscm-static",
-  app: () => System.import("http://localhost:8080/js/app.js"),
-  activeWhen: "/",
-});
-
 // Vue2 子应用
 // registerApplication({
 //   name: "@polyglot-mf/clients",
